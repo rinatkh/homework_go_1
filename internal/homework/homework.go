@@ -1,5 +1,7 @@
 package homework
 
+import "fmt"
+
 // BuildGreeting возвращает приветствие для ученика.
 //
 // Ожидаемый формат:
@@ -43,4 +45,10 @@ func BuildRepositoryPath(owner string, repo string) string {
 func BuildRunCommand(packagePath string) string {
 	// TODO: реализуйте функцию через fmt.Sprintf.
 	return ""
+}
+
+// 14 -> "Ваш возраст = 14"
+func buildAge(age int) string {
+	result := fmt.Sprintf("Ваш возраст = %d", age)
+	return result
 }
