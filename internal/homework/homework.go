@@ -1,12 +1,14 @@
 package homework
 
+import "fmt"
+
 // BuildGreeting возвращает приветствие для ученика.
 //
 // Ожидаемый формат:
 // "Привет, {name}! Добро пожаловать в Go."
 func BuildGreeting(name string) string {
 	// TODO: реализуйте функцию через fmt.Sprintf.
-	return ""
+	return fmt.Sprintf("Привет, %s! Добро пожаловать в Go.", name)
 }
 
 // BuildCourseWelcome возвращает название курса.
